@@ -1,0 +1,7 @@
+General Guide for MSP432: https://software-dl.ti.com/msp430/msp430_public_sw/mcu/msp430/MSP432_Driver_Library/latest/exports/driverlib/msp432_driverlib_3_21_00_05/doc/MSP432P4xx/html/driverlib_html/index.html
+(if on Linux:
+(Patch makefile and build files within Debug/: `./patch.sh`
+
+1. Install SimpleLink SDK (2.30.00.14) for source files: https://www.ti.com/tool/download/SIMPLELINK-MSP432E4-SDK/2.30.00.14
+2. Install Code Composer Studio (8.1.0) for compiler and linker: https://software-dl.ti.com/ccs/esd/documents/ccs_downloads.html (https://software-dl.ti.com/ccs/esd/CCSv8/CCS_8_1_0/exports/CCS8.1.0.00011_win32.zip) (https://software-dl.ti.com/ccs/esd/CCSv8/CCS_8_1_0/exports/CCS8.1.0.00011_linux-x64.tar.gz) (https://software-dl.ti.com/ccs/esd/CCSv8/CCS_8_1_0/exports/CCS8.1.0.00011_osx.zip)
+3. `make all` (or `make BOLT_IV_MCU.out`, `make BOLT_IV_MCU.hex`) for target
