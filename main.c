@@ -85,7 +85,7 @@
 #define RPM_LEN          6 //due to possible negative, will have leading 0 if positive
 
 #define UART_2_EN
-//#define XBEE_PLACEHOLDER_DATA
+#define XBEE_PLACEHOLDER_DATA
 
 #define IGNIT_CUTOFF_DELAY	70
 #define IMU_RECEIVE_BAUD 57600
@@ -259,12 +259,12 @@ int main(void)
 	strncpy((char* )CANData.lowTemp, "70", sizeof(CANData.lowTemp));
 	strncpy((char* )CANData.highVoltage, "6.8", sizeof(CANData.highVoltage));
 	strncpy((char* )CANData.lowVoltage, "6.4", sizeof(CANData.lowVoltage));
-	strncpy((char* )IMUData.xAcc, "1.5", sizeof(IMUData.xAcc));
-	strncpy((char* )IMUData.yAcc, "1.2", sizeof(IMUData.yAcc));
-	strncpy((char* )IMUData.zAcc, "1", sizeof(IMUData.zAcc));
-	strncpy((char* )IMUData.xGyro, "20", sizeof(IMUData.xGyro));
-	strncpy((char* )IMUData.yGyro, "3", sizeof(IMUData.yGyro));
-	strncpy((char* )IMUData.zGyro, "0", sizeof(IMUData.zGyro));
+	strncpy((char* )gIMUData.xAcc, "1.5", sizeof(gIMUData.xAcc));
+	strncpy((char* )gIMUData.yAcc, "1.2", sizeof(gIMUData.yAcc));
+	strncpy((char* )gIMUData.zAcc, "1", sizeof(gIMUData.zAcc));
+	strncpy((char* )gIMUData.xGyro, "20", sizeof(gIMUData.xGyro));
+	strncpy((char* )gIMUData.yGyro, "3", sizeof(gIMUData.yGyro));
+	strncpy((char* )gIMUData.zGyro, "0", sizeof(gIMUData.zGyro));
 	strncpy((char* )pumpVoltage, "12", sizeof(pumpVoltage));
 	strncpy((char* )auxVoltage, "16", sizeof(auxVoltage));
 #endif
